@@ -107,6 +107,14 @@ CloseWindow(WindowID)
 OpenWindow(WindowID)
 -- Example: OpenWindow(1)
 
+CreateGuildMark(markIndex)
+-- Atualiza/cria a textura da marca de guild (não desenha no ecrã). UserGetGuild() devolve o índice do herói (-1 se sem guild).
+-- Example: CreateGuildMark(15)
+
+RenderGuildMark(markIndex, x, y, size)
+-- Cria a marca e desenha-a no ecrã em (x, y) com tamanho size×size.
+-- Example: RenderGuildMark(UserGetGuild(), 200, 200, 64)
+
 ResetMouseL()
 -- Example: ResetMouseL()
 

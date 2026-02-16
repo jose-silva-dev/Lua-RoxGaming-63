@@ -13,6 +13,14 @@ LogAddLua(str)
 -- Escreve no log Lua.
 -- Example: LogAddLua("Lua Log")
 
+LogAdd(tipo, str)
+-- Escreve no log com cor. tipo = 1 a 14: 1=preto, 2=vermelho, 3=verde, 4=azul, 5=verde escuro, 6=vermelho escuro, 7=magenta, 8=roxo, 9=azul escuro, 10=laranja, 11=amarelo, 12=castanho, 13=ciano, 14=cinza.
+-- Example: LogAdd(2, "Teste vermelho")
+
+LogColor(tipo, msg)
+-- Igual a LogAdd(tipo, msg). Escreve no log com cor (tipo 1 a 14).
+-- Example: LogColor(3, "Teste verde")
+
 LogAddC(type, str)
 -- Escreve no log com cor (type = 1-14, cores diferentes).
 -- Example: LogAddC(2, "Red Log")
@@ -340,6 +348,14 @@ ResetQuest(aIndex)
 SendQuestPrize(aIndex, reward, amount)
 -- Example: SendQuestPrize(aIndex, 1, 100)
 
+StartBC()
+-- Inicia o evento Blood Castle imediatamente. Usar só em testes.
+-- Example: StartBC()
+
+StartDS()
+-- Inicia o evento Devil Square imediatamente. Usar só em testes.
+-- Example: StartDS()
+
 -- =============================================================
 -- CHAOS MACHINE GENESIS (se CHAOS_MACHINE_GENESIS definido)
 -- =============================================================
@@ -381,6 +397,10 @@ GetTick()
 
 GetTickGS()
 -- Example: local t = GetTickGS()
+
+GetServerName()
+-- Retorna o nome do servidor (string).
+-- Example: local nome = GetServerName()
 
 GetTimeDays(dayOfWeek, day, hour, minute, second)
 -- Example: local diff = GetTimeDays(0, 1, 12, 0, 0)
