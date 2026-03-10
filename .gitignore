@@ -1,8 +1,6 @@
 # ============================================
-# Gitignore geral – tudo que não precisa subir
+# Gitignore geral
 # ============================================
-
-# --- Por extensão ---
 *.log
 *.bak
 *.tmp
@@ -13,13 +11,6 @@
 *.rar
 *.zip
 *.7z
-
-# --- IDE / Editor ---
-.vs/
-.vscode/
-.idea/
-
-# --- OS ---
 .DS_Store
 Thumbs.db
 Desktop.ini
